@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffe6f0;
+    margin: 0;
+    overflow: hidden; /* ป้องกันการเลื่อนจอ */
+    height: 100vh;
+  }
+  
+  h1 {
+    color: #e60073;
+  }
+  
+  .rose {
+    width: 100px; /* เพิ่มขนาดใหญ่ขึ้น */
+    height: 100px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2926/2926754.png'); /* กุหลาบ */
+    background-size: cover;
+    position: absolute;
+  }
+  
+  .fade-out {
+    animation: fadeOut 4s forwards; /* ค่อยๆ จางหายภายใน 2 วินาที */
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e60073;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #b3005e;
+  }
+  
